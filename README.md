@@ -31,13 +31,23 @@ portlens does all of that in one command.
 go install github.com/aymantoumi/portlens@latest
 ```
 
-### Binary download (Linux amd64 and arm64)
+### Binary download (Linux, macOS)
 
 Download the latest release from the [releases page](https://github.com/aymantoumi/portlens/releases).
 
 ```bash
+# Linux amd64
 curl -L https://github.com/aymantoumi/portlens/releases/latest/download/portlens-linux-amd64 \
     -o portlens
+
+# macOS amd64
+curl -L https://github.com/aymantoumi/portlens/releases/latest/download/portlens-darwin-amd64 \
+    -o portlens
+
+# macOS Apple Silicon (M1/M2/M3)
+curl -L https://github.com/aymantoumi/portlens/releases/latest/download/portlens-darwin-arm64 \
+    -o portlens
+
 chmod +x portlens
 sudo mv portlens /usr/local/bin/
 ```
@@ -65,8 +75,8 @@ portlens is cross-platform and supports:
 | Platform | Status | Method |
 |----------|--------|--------|
 | Linux | ✅ Stable | Reads `/proc/net/tcp` and `/proc/[pid]/` |
-| Windows | �_beta_ | Uses gopsutil library |
-| macOS | �_beta_ | Uses `lsof` command |
+| macOS | 🧪 Beta | Uses `lsof` command |
+| Windows | 🧪 Beta | Uses gopsutil library |
 
 ### Building for Different Platforms
 
