@@ -1,0 +1,20 @@
+# Binary
+portlens
+portmap
+dist/
+
+# Go
+*.test
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Internal docs (not for release)
+*_ORCHESTRATION.md
+*_AGENT_*.md
+portlens-cli-design.md
