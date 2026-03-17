@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/yourusername/portmap/internal/conflict"
-	"github.com/yourusername/portmap/internal/render"
-	"github.com/yourusername/portmap/internal/resolver"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/conflict"
+	"github.com/aymantoumi/portlens/internal/render"
+	"github.com/aymantoumi/portlens/internal/resolver"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 var watchInterval int

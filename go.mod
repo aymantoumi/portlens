@@ -1,4 +1,4 @@
-module github.com/yourusername/portmap
+module github.com/aymantoumi/portlens
 
 go 1.25.0
 

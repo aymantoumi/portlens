@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yourusername/portmap/internal/conflict"
-	"github.com/yourusername/portmap/internal/registry"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/conflict"
+	"github.com/aymantoumi/portlens/internal/registry"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 func PrintConflictBlock(s conflict.Suggestion) {

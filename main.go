@@ -1,6 +1,6 @@
 package main
 
-import "github.com/yourusername/portmap/cmd"
+import "github.com/aymantoumi/portlens/cmd"
 
 var version = "dev"
 

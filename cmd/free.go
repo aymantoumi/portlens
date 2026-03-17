@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/yourusername/portmap/internal/render"
-	"github.com/yourusername/portmap/internal/resolver"
+	"github.com/aymantoumi/portlens/internal/render"
+	"github.com/aymantoumi/portlens/internal/resolver"
 )
 
 var freeCount int

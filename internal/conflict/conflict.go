@@ -3,8 +3,8 @@ package conflict
 import (
 	"fmt"
 
-	"github.com/yourusername/portmap/internal/registry"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/registry"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 type Suggestion struct {

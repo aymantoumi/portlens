@@ -1,6 +1,6 @@
 package registry
 
-import "github.com/yourusername/portmap/internal/types"
+import "github.com/aymantoumi/portlens/internal/types"
 
 // Lookup returns the RegistryEntry for a port number.
 // Returns nil if the port is not in the registry.

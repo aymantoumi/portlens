@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	dockerclient "github.com/fsouza/go-dockerclient"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 type Client struct {

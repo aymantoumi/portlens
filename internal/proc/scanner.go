@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 func ScanListening() ([]*types.PortEntry, error) {

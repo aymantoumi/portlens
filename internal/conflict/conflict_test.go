@@ -3,7 +3,7 @@ package conflict
 import (
 	"testing"
 
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 func TestSuggest(t *testing.T) {

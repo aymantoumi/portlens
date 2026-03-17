@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 const (

@@ -1,6 +1,6 @@
 package registry
 
-import "github.com/yourusername/portmap/internal/types"
+import "github.com/aymantoumi/portlens/internal/types"
 
 var entries = []types.RegistryEntry{
 	// Web and reverse proxy

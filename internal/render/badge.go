@@ -2,7 +2,7 @@ package render
 
 import (
 	"github.com/charmbracelet/lipgloss"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 func BadgeStyle(b types.BadgeKind) string {

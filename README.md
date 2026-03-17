@@ -24,15 +24,15 @@ portlens does all of that in one command.
 ### From source
 
 ```bash
-go install github.com/yourusername/portlens@latest
+go install github.com/aymantoumi/portlens@latest
 ```
 
 ### Binary download (Linux amd64 and arm64)
 
-Download the latest release from the [releases page](https://github.com/yourusername/portlens/releases).
+Download the latest release from the [releases page](https://github.com/aymantoumi/portlens/releases).
 
 ```bash
-curl -L https://github.com/yourusername/portlens/releases/latest/download/portlens-linux-amd64 \
+curl -L https://github.com/aymantoumi/portlens/releases/latest/download/portlens-linux-amd64 \
     -o portlens
 chmod +x portlens
 sudo mv portlens /usr/local/bin/
@@ -41,7 +41,7 @@ sudo mv portlens /usr/local/bin/
 ### Build from source
 
 ```bash
-git clone https://github.com/yourusername/portlens
+git clone https://github.com/aymantoumi/portlens
 cd portlens
 go build -o portlens .
 ```
@@ -295,7 +295,7 @@ The resolver merges all three sources. Docker entries take priority for the same
 ## Building from Source
 
 ```bash
-git clone https://github.com/yourusername/portlens
+git clone https://github.com/aymantoumi/portlens
 cd portlens
 make build
 ./portlens --help

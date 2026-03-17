@@ -6,11 +6,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/yourusername/portmap/internal/docker"
-	"github.com/yourusername/portmap/internal/proc"
-	"github.com/yourusername/portmap/internal/registry"
-	"github.com/yourusername/portmap/internal/systemd"
-	"github.com/yourusername/portmap/internal/types"
+	"github.com/aymantoumi/portlens/internal/docker"
+	"github.com/aymantoumi/portlens/internal/proc"
+	"github.com/aymantoumi/portlens/internal/registry"
+	"github.com/aymantoumi/portlens/internal/systemd"
+	"github.com/aymantoumi/portlens/internal/types"
 )
 
 type Options struct {
