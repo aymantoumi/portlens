@@ -1,5 +1,8 @@
 # portlens
 
+[![Cross-Platform](https://img.shields.io/badge/cross--platform-Linux%20%7C%20Windows%20%7C%20macOS-blue.svg)](https://github.com/aymantoumi/portlens)
+[![Beta](https://img.shields.io/badge/status-beta-orange.svg)](https://github.com/aymantoumi/portlens)
+
 A CLI tool that shows you what is running on every port on your machine, what Docker container or system process owns it, and whether anything is conflicting.
 
 ## Why portlens?
@@ -18,6 +21,7 @@ portlens does all of that in one command.
 - Export port configurations for docker-compose, .env, or JSON
 - Built-in registry of 75+ well-known ports
 - Color-coded output by service category
+- **Cross-platform**: Linux, Windows, and macOS support
 
 ## Install
 
@@ -48,9 +52,38 @@ go build -o portlens .
 
 ### Requirements
 
-- Linux (reads /proc/net/tcp and /proc/[pid]/ directly)
+- Linux, Windows, or macOS
 - Docker daemon socket at /var/run/docker.sock (optional, skip with --skip-docker)
-- No root required for Docker and most process scanning. Some unresolved processes need sudo to read /proc/[pid]/fd/.
+- No root required for Docker and most process scanning. Some unresolved processes may need elevated permissions.
+
+---
+
+## Platform Support
+
+portlens is cross-platform and supports:
+
+| Platform | Status | Method |
+|----------|--------|--------|
+| Linux | ✅ Stable | Reads `/proc/net/tcp` and `/proc/[pid]/` |
+| Windows | �_beta_ | Uses gopsutil library |
+| macOS | �_beta_ | Uses `lsof` command |
+
+### Building for Different Platforms
+
+```bash
+# Linux (default)
+go build -o portlens .
+
+# Windows
+GOOS=windows GOARCH=amd64 go build -o portlens.exe .
+
+# macOS
+GOOS=darwin GOARCH=amd64 go build -o portlens .
+```
+
+### Beta Notice
+
+Windows and macOS support are currently in **beta**. Please report any issues at: https://github.com/aymantoumi/portlens/issues
 
 ---
 
